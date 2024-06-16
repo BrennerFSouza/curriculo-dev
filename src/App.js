@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to bbb.
         </p>
         <a
           className="App-link"
@@ -20,6 +20,12 @@ function App() {
       </header>
     </div>
   );
-}
+} */
 
-export default App;
+  function ExibeTextoPersonalizado(props){
+    return <h1>Olá, {props.name}, Idade: {props.idade}</h1>
+  }
+
+  const Home = () => <ExibeTextoPersonalizado name="Brenner"  idade="24" />;
+
+export default Home
